@@ -1,0 +1,38 @@
+{
+  "name": "template-fullstack-firebase",
+  "version": "1.0.0",
+  "description": "Fullstack monorepo with GCP, Firebase and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodyGL/template-fullstack-firebase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodyGL/template-fullstack-firebase/issues"
+  },
+  "homepage": "https://github.com/RodyGL/template-fullstack-firebase#readme",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
+}
