@@ -1,0 +1,25 @@
+{
+  "name": "@changeme/api-functions",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "emulator": "firebase emulators:start --only functions",
+    "serve": "concurrently -k \"npm:dev\" \"npm:emulator\"",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "build/main.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
