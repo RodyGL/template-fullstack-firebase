@@ -1,0 +1,30 @@
+{
+  "name": "webapp",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --fix --ext .js,.ts,.tsx ./src"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.8.8",
+    "@mantine/core": "^3.6.9",
+    "@mantine/hooks": "^3.6.9",
+    "@mantine/notifications": "^3.6.9",
+    "@radix-ui/react-icons": "^1.0.3",
+    "firebase": "^9.6.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.27.0",
+    "react-intl": "^5.24.6",
+    "react-location": "^3.3.4",
+    "react-location-devtools": "^3.3.4",
+    "react-query": "^3.34.15"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11"
+  }
+}

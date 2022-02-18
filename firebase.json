@@ -1,9 +1,9 @@
 {
   "functions": {
-    "source": "./packages/api-functions"
+    "source": "./apps/functions"
   },
   "hosting": {
-    "public": "./packages/ui-webapp/dist",
+    "public": "./apps/webapp/dist",
     "ignore": [
       "firebase.json",
       "**/.*",

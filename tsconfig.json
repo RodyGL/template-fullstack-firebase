@@ -1,12 +1,7 @@
 {
   "extends": "./tsconfig.base.json",
-  "exclude": ["**/node_modules", "**/dist", "**/build"],
+  "exclude": ["node_modules", "dist", "build"],
   "compilerOptions": {
-    "types": ["vite/client"],
-    "baseUrl": "./",
-    "paths": {
-      "@/api-functions/*": ["./packages/api-functions/src/*"],
-      "@/ui-webapp/*": ["./packages/ui-webapp/src/*"]
-    }
+    "types": ["node", "vite/client"]
   }
 }

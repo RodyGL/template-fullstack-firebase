@@ -1,10 +1,13 @@
 import { resolve } from 'path';
+
 import builtinModules from 'builtin-modules';
 import { defineConfig } from 'vite';
+
+import globalPkg from '../../package.json';
+
 import localPkg from './package.json';
 
 // https://vitejs.dev/config/
-// eslint-disable-next-line import/no-default-export
 export default defineConfig({
   plugins: [],
   build: {
@@ -15,7 +18,11 @@ export default defineConfig({
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: [
-        ...new Set([...Object.keys(localPkg.dependencies), ...builtinModules]),
+        ...new Set([
+          ...Object.keys(globalPkg.dependencies),
+          ...Object.keys(localPkg.dependencies),
+          ...builtinModules,
+        ]),
       ],
       input: {
         main: resolve(__dirname, 'src/index.ts'),
@@ -35,7 +42,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@/api-functions': resolve(__dirname, 'src'),
+      '@': resolve(__dirname, 'src'),
     },
   },
 });
